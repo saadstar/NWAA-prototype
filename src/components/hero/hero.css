@@ -1,0 +1,194 @@
+.hero{
+    color: #020202;
+}
+.hero .heroHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hero .heroHeader span{
+color: #545454;
+font-weight: 500;
+font-size: 18px;
+}
+.hero .heroHeader .filterLogo{
+    cursor: pointer;
+    display: none;
+}
+.hero .cardList{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: auto;
+    gap: 0rem;
+    margin-top: 1rem;
+}
+.cardList .card{
+cursor: pointer;
+}
+.cardList .card .cardImage{
+    cursor: pointer;
+    position: relative;    
+}
+.cardImage .mainImg{
+    border: 1px solid #0000001A;
+    padding: 1rem 1.25rem;
+    width: 70%;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 12px;
+    &:hover{
+        background-color: #E8EDF2;
+    }
+}
+.cardImage .off{
+    position: absolute;
+        top:12%;
+        left: 45%;
+        background: #FF7B02;
+        border: none;
+        outline: none;
+        padding: 8px;
+        border-radius: 14px;
+        font-size: 12px;
+        color: #FFFFFF;
+}
+.cardImage .cardButton{
+    position: absolute;
+    bottom: 8%;
+    left: 5%;
+    border: none;
+    outline: none;
+    padding: .6rem 3rem;
+    border-radius: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1A4B7B;
+    color: #E8EDF2;
+    -webkit-box-shadow: -1px 6px 14px -4px rgba(26, 75, 123, 0.62);
+        -moz-box-shadow: -1px 6px 14px -4px rgba(26, 75, 123, 0.62);
+        box-shadow: -1px 6px 14px -4px rgba(26, 75, 123, 0.62);
+        cursor: pointer;
+        display: flex;
+        gap: 4px;
+        align-items: center;
+        font-weight: 400;
+}
+.card .cardContent{
+    display: flex;    
+    align-items: center;
+    gap: 4px;
+    cursor:default;
+}
+.cardContent .rate{
+    font-weight: 400;    
+    font-size: 19px;
+}
+.cardContent .percentage{
+    color:#545454;
+    font-weight: 400;    
+}
+.card .cardTitle{
+    margin-top: 5px;
+    color: #020202;
+    font-weight: 600;
+    line-height: 2ch;
+}
+.card .description{
+    margin-top: 7px;
+    width: 80%;
+    color: #545454;
+    font-weight: 400;
+    font-size: 12px;
+}
+.card .cardPrice{
+    font-weight: 600;
+    margin-top: 10px;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 1.5rem;
+}
+.card .cardPrice .oldPrice{
+   color: #8A8A8A;
+   font-size: 20px;
+   text-decoration: line-through;
+}
+.hero .heroPagenation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    cursor: pointer;    
+}
+@media screen and (max-width:768px) {
+    .hero{
+        overflow-x: hidden;
+                margin-top: 2rem;
+    }
+    .contentContainer {
+            display: flex;
+            gap: 0rem;
+        }
+                .hero .heroHeader span {                    
+                    font-size: 14px;
+                }
+    .filterLogo{
+        display: block !important;
+    }
+    .hero .cardList {
+            display: grid;
+            grid-template-columns:repeat(2,1fr);
+            margin-top: 2rem;
+        }
+        .cardList .card {
+            min-width: 45vw;
+        }
+                .cardImage .mainImg {
+                    width: 95%;
+                    height: 190px;
+                    padding: 0.5rem;
+                }
+              .card  .cardButton{
+                    display: none;
+                }
+                                .cardImage .off {
+                                    top: 8%;
+                                    padding: 5px;
+                                    font-size: 10px;
+                                }
+                                .cardContent .rate {
+                                    display: none;
+                                }
+                    .cardContent img{
+                        width: 50%; 
+                    }
+                                        .cardContent .percentage {                                         
+                                            font-size: 11px;
+                                        }
+        .card .cardTitle {
+            margin-top: 10px;         
+            font-size: 14px;
+        }
+                .card .description {
+                    width: 95%;                    
+                    font-size: 10px;
+                }
+.heroPagenation{
+    margin-top: 2rem;
+margin-bottom: 4rem;
+}
+.heroPagenation img{
+    width: 90%;
+}
+.card .cardPrice { 
+    font-size: 16px; 
+    gap: 0.5rem;
+}
+.card .cardPrice .oldPrice {    
+    font-size: 16px;    
+}
+            }
+
+

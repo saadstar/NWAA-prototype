@@ -1,0 +1,148 @@
+.header{
+    display: flex;
+    flex-direction: column;
+    background-image: url("/public/2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.Navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .Navbar .left{        
+                display: flex;
+                gap: 4rem;
+                justify-content: center;
+                align-items: center;        
+    }
+    .left .logoImg{
+        width: 70px;
+        height: 50px;
+        object-fit: cover;
+    }
+    .left ul{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap:2rem;        
+    }
+    .left ul>li{        
+        color: #545454;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 400;
+    }
+   .left ul .active {
+       color: #1A4B7B;
+       font-weight: 500;
+       padding-bottom: 6px;
+       border-bottom: 2px solid #1A4B7B;
+       padding-top: 6px;
+   }
+   .Navbar .right{
+        display: flex;
+            align-items: center;
+            gap: 1.25rem;
+            cursor: pointer;
+   }
+   .right >img{
+    width: 20px;    
+   }
+   .Navbar .right .iconContainer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap:3px;
+   }
+   .Navbar .right .en{
+    position: relative;
+   }
+   .Navbar .right .iconContainer p{
+        font-weight: 500;
+        color: #020202;
+        font-size: 12px;
+   }
+   .Navbar .right .iconContainer .langContainer{
+    position: absolute;
+        top: 2.75rem;
+        display: flex;
+        flex-direction: column;
+        background-color:#FFFFFF;
+        color: #000000;
+        padding: 5px 10px;
+        border-radius: 10px;
+   }
+   .Navbar .right .iconContainer .langContainer::before{
+content: "";
+    width: 20px;
+    height: 20px;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: -7px;
+    left: 50%;
+    border-radius: 10px;
+   }
+   .Navbar .right .iconContainer .langContainer>span{
+    padding: 14px;
+    font-weight: bold;
+        letter-spacing: 1.2px;
+        font-size: 15px;
+    }
+    .Navbar .right .iconContainer .langContainer .english{    
+        border-bottom: 1px solid #dedcdc;
+        letter-spacing: .6px;
+   }
+
+.Navbar .menu{
+    display: none;
+}
+    .headerBottom{
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+        position: relative;
+    }
+    .headerBottom h4{
+    font-size: 2.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 500;
+        color: #020202;
+        margin-right: 5rem;
+    }
+    .headerBottom span{
+    position: absolute;    
+        align-items: center;
+        justify-content: center;
+        bottom: -2rem;
+        left: 37%;
+        font-size: 6rem;
+        color: #6686A7;
+        opacity: 0.1;
+    }
+    @media screen and (max-width:768px) {
+        .Navbar{
+            padding-top: 10px;
+        }
+        .left ul{
+            display: none;
+        }
+        .Navbar .right{
+            display: none;
+        }
+                   .headerBottom span {
+                       bottom: -40%;
+                       left: 30%;
+                       font-size: 4rem;
+                       opacity: 0.05;
+                   }
+        .headerBottom h4{
+            margin-right: 0px;
+            font-size: 2rem;
+        }
+                .Navbar .menu {
+                    display: block;
+                    cursor: pointer;
+                }
+    }
